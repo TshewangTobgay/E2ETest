@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-06-01T08:25:45.765Z",
-    "end": "2021-06-01T08:25:45.767Z",
-    "duration": 2,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2021-06-02T06:56:13.453Z",
+    "end": "2021-06-02T06:56:49.710Z",
+    "duration": 36257,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "05ee7cbe-4fbf-40f3-8e58-628c4a98ea71",
+      "title": "",
+      "fullFile": "cypress/integration/examples/UserLogin.js",
+      "file": "cypress/integration/examples/UserLogin.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "296e4b7a-127c-4ca5-a4fb-670a8ceaf7cb",
+          "title": "Sign up Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Existing user Log in",
+              "fullTitle": "Sign up Page Existing user Log in",
+              "timedOut": null,
+              "duration": 33192,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var _this = this;\nvar loginPage = new _LogInPage[\"default\"]();\nvar landingPage = new _LandingPage[\"default\"]();\nvar appointmentPage = new _AppointmentPage[\"default\"]();\ncy.visit(Cypress.env('url'));\nloginPage.getEmailAddress().type(this.data.existingUserName);\nloginPage.getPassword().type(this.data.existingPassword);\nloginPage.getSignInButton().click(); //Extract current user name\nlandingPage.getCurrentUser().then(function (name) {\n  CurrentUser = name.text().split(',')[1].trim().split('!')[0].trim();\n  cy.log(CurrentUser);\n}); //Check if there is any existing appointments for the current user\nlandingPage.getAppointmentLists().each(function ($e1) {\n  if ($e1.text().includes(CurrentUser)) {\n    cy.log('This is my existing appointment');\n  }\n}); //Creating an appointment\nlandingPage.getAppointmentTab().click();\nappointmentPage.getAgenaEditor().type(this.data.agenda2);\nappointmentPage.getDescriptionEditor().type(this.data.description2);\nappointmentPage.getStartDateInput().type(this.data.appStartDate2);\nappointmentPage.getEndDateInput().type(this.data.appEndDate2);\nappointmentPage.getRoomDropDown().click();\nappointmentPage.getRoomOption().each(function ($e1) {\n  if ($e1.text().includes(_this.data.roomName)) {\n    $e1.click();\n  }\n});\nappointmentPage.getTimeEditor().click();\nappointmentPage.getAptHour().click();\nappointmentPage.getAptMin().click({\n  force: true\n});\nappointmentPage.getTimeOKButton().click();\nappointmentPage.getAddParticipantButton().click();\nappointmentPage.getParticipantEditor().type(this.data.participant);\nappointmentPage.getParticipantSubmitButton().click();\nappointmentPage.getAptDetails().click(); //Filter appointments of current user\nlandingPage.getDashboardTab().click();\nlandingPage.getAppointmentDropDown().click();\nlandingPage.getDropDownOption().select('Mine'); //Check if newly created appointment is in the list\nlandingPage.getFilteredAppointment().each(function ($e1) {\n  if ($e1.text().includes(_this.data.agenda)) {\n    cy.log('New appointment found in the list');\n  }\n}); //Find total number of appointments of the current user\nlandingPage.getAppointmentLists().then(function (listing) {\n  var myAppointments = Cypress.$(listing).length;\n  cy.log('My total appointments: ' + myAppointments);\n});\nlandingPage.getLogOutTab().click();",
+              "err": {},
+              "uuid": "77840488-84f1-4914-9305-c5cda0cffefb",
+              "parentUUID": "296e4b7a-127c-4ca5-a4fb-670a8ceaf7cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "77840488-84f1-4914-9305-c5cda0cffefb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33192,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

@@ -7,10 +7,9 @@
   "env": {
     "url": "http://localhost:4200/home/signin"
   },
-
   "testFiles": "**/*.js",
-
-  "retries":{
+  "retries": {
     "runMode": 1
   }
+
 }
