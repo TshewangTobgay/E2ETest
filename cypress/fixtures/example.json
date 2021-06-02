@@ -1,0 +1,26 @@
+{
+  "Name": "Tshewang",
+  "userName": "tshewang@mail.com",
+  "password": "test1234",
+
+  "adminUserName": "admin@admin.com",
+  "adminPassword": "admin1234",
+
+  "existingUserName": "emattioni1@wordpress.org",
+  "existingPassword": "Klr49f3gW",
+
+  "roomName": "My new Room",
+
+  "agenda": "New Sample Agenda",
+  "description": "This appointment is created by admin user through automation",
+  "appStartDate": "6/1/2021",
+  "appEndDate": "6/5/2021",
+  "participant": "Tashi",
+
+  "agenda2": "Different Agenda",
+  "description2": "This appointment is created by the registered user",
+  "appStartDate2": "6/10/2021",
+  "appEndDate2": "6/15/2021",
+  "participant2": "Karma"
+
+}

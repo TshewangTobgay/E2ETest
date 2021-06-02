@@ -1,0 +1,16 @@
+{
+  "defaultCommandTimeout": 8000,
+  "pageLoadTimeout": 100000,
+  "viewportHeight": 800,
+  "viewportWidth": 1100,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "http://localhost:4200/home/signin"
+  },
+
+  "testFiles": "**/*.js",
+
+  "retries":{
+    "runMode": 1
+  }
+}

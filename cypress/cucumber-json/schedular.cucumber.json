@@ -1,0 +1,283 @@
+[
+  {
+    "description": "    Application Regression",
+    "keyword": "Feature",
+    "name": "End to End angular Schedular validation",
+    "line": 1,
+    "id": "end-to-end-angular-schedular-validation",
+    "tags": [],
+    "uri": "schedular.feature",
+    "elements": [
+      {
+        "id": "end-to-end-angular-schedular-validation;login-validation-for-non-registered-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login Validation for non registered user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I opened Login page",
+            "result": {
+              "status": "passed",
+              "duration": 31448000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I give user credentials",
+            "result": {
+              "status": "passed",
+              "duration": 921000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Click on Login Button",
+            "result": {
+              "status": "passed",
+              "duration": 179000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Throws the error message",
+            "result": {
+              "status": "passed",
+              "duration": 5634000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-angular-schedular-validation;new-user-registration",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "New user registration",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I opened Login page",
+            "result": {
+              "status": "passed",
+              "duration": 13889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Click on SignUp Link",
+            "result": {
+              "status": "passed",
+              "duration": 169000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I give user registration details",
+            "result": {
+              "status": "passed",
+              "duration": 1137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Click on Create Account Button",
+            "result": {
+              "status": "passed",
+              "duration": 159000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Displays success message",
+            "result": {
+              "status": "passed",
+              "duration": 4911000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-angular-schedular-validation;admin-checking-for-pending-new-user-approval",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Admin checking for pending new user approval",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I opened Login page",
+            "result": {
+              "status": "passed",
+              "duration": 3132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I log in as Admin user",
+            "result": {
+              "status": "passed",
+              "duration": 1145000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I go through the list and check if previously created user is there",
+            "result": {
+              "status": "passed",
+              "duration": 621000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-angular-schedular-validation;checking-the-existing-appointments-of-admin",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Checking the existing appointments of Admin",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I opened Login page",
+            "result": {
+              "status": "passed",
+              "duration": 2216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I log in as Admin user",
+            "result": {
+              "status": "passed",
+              "duration": 962000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Extract current user name from dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Check if there is any existing appointments",
+            "result": {
+              "status": "passed",
+              "duration": 2438000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-angular-schedular-validation;creating-room-and-appointment",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Creating room and appointment",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I opened Login page",
+            "result": {
+              "status": "passed",
+              "duration": 795000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I log in as Admin user",
+            "result": {
+              "status": "passed",
+              "duration": 1087000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I create a new room",
+            "result": {
+              "status": "passed",
+              "duration": 1135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Check if new room is added to the lists",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I create an appointment",
+            "result": {
+              "status": "passed",
+              "duration": 4709000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "Check if new appointment is added in the lists",
+            "result": {
+              "status": "passed",
+              "duration": 490000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
